@@ -13,7 +13,7 @@
     sudo dnf install -y docker-ce --nobest
     ```
 
-1. Instalar última versión docker
+1. Actualizar última versión docker
     ```console
     sudo dnf update -y docker-ce --nobest
     ```
