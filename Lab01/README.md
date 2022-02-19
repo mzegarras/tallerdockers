@@ -102,6 +102,9 @@ for i in `seq 1 10`;do echo $i >> data_demo.txt;done
 
 head -n 2 data_demo.txt
 tail -2 data_demo.txt
+tail -f data_demo.txt
+tail -f data_demo.txt |grep 1
+
 cat data_demo.txt
 cat data_demo.txt |grep 10
 ```
