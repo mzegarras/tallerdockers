@@ -13,4 +13,13 @@ ssh -i ./credentials/DockerK8S-202009.pem centos@34.209.23.240
 * Windows
 
 
+Absoluta:
+/data/temoporal
 
+Relativa:
+./data/temporal
+data/temporal
+
+
+mkdir -p /data4/dir1/dir2/dir3
+mkdir -p ./data40/dir1/dir2/dir3/dir4
