@@ -15,6 +15,7 @@
     docker exec -it a15f6d725e0c /bin/sh
     cd /usr/share/nginx/html
     lt -lt
+    docker inspect <<id container>>
 
     echo $PWD
     cd /usr/local/Proyectos/Galaxy/DockerK8S-202009/Lab04
