@@ -23,3 +23,8 @@ data/temporal
 
 mkdir -p /data4/dir1/dir2/dir3
 mkdir -p ./data40/dir1/dir2/dir3/dir4
+
+
+sudo dnf update -y docker-ce --nobest
+
+nginx:1.21.6-perl
