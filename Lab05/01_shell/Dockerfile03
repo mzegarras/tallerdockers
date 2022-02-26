@@ -1,5 +1,5 @@
 FROM alpine
 ADD demo02.sh ./app.sh
-#RUN chmod +x ./app.sh
-RUN ls -lta /
+RUN chmod +x ./app.sh
+#RUN ls -lta /
 ENTRYPOINT ./app.sh
