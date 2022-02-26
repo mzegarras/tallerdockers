@@ -47,4 +47,20 @@ curl http://18.236.114.56:8081/customers
 
 
 docke run -v /tempo:/tempo -v /tempov2:/tempov2/data
+
+
+
+
+   
+FROM alpine
+ADD demo02.sh ./app.sh
+RUN chmod +x ./app.sh
+ENTRYPOINT ./app.sh
+
+docker build -t shell03 -f Dockerfile03 .
+ADD ./demo02.sh ./app.sh
+
+
+docker build -t shell03 -f Dockerfile03 /data
+ADD /data/demo02.sh ./app.sh
 ```
