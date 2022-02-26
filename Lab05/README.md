@@ -5,6 +5,11 @@
 * Limpiar (opcional)
     ```bash
     docker system prune
+
+    sudo dnf install git
+    
+    git clone https://github.com/mzegarras/tallerdockers.git
+
     ```
 
 
