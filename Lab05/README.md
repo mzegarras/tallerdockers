@@ -92,7 +92,15 @@
     -f Dockerfile07 .
     docker run shell07
     ```
-    
+
+## web01a
+    ```bash
+    cd ./Lab05/02_web/1.0
+
+    docker build -t web01 .
+    docker run -p 8080:80 web01
+    ```
+
 ## web01
 
     ```bash
