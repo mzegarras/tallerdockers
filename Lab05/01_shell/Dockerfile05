@@ -7,8 +7,8 @@ RUN apk update
 RUN apk add curl
 
 # # Add dependency tzdata
-# RUN apk add tzdata
-# ENV TZ=America/Lima
+RUN apk add tzdata
+ENV TZ=America/Lima
 
 # # Create folder
 # RUN mkdir /app
