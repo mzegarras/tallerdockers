@@ -1,12 +1,15 @@
 FROM ubuntu
-#RUN apk update
-#RUN apk add curl
-#RUN apk update && apk add curl
-RUN apt-get update && \
-    apt-get install -y curl && \
-    apt-get install -y git && \
-    mkdir /app
+RUN apk update
+RUN apk add curl
+RUN apk update && apk add curl
 
-RUN ls -lta /app
+# RUN apt-get update && \
+#     apt-get install -y curl && \
+#     apt-get install -y git && \
+#     mkdir /app
 
-ENTRYPOINT ["curl","-v", "ifconfig.me"]
+ADD demo05.sh ./app.sh
+RUN chmod +x ./app.sh
+
+#ENTRYPOINT ["curl","-v", "ifconfig.me"]
+ENTRYPOINT ./app.sh

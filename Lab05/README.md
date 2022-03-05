@@ -65,6 +65,12 @@
     docker run shell05
     ```
 
+## shell06
+
+    ```bash
+    docker build -t shell06 -f Dockerfile06 .
+    docker run shell06
+    ```
 
 ## shell07
 
