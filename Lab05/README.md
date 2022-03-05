@@ -130,13 +130,15 @@
     ```bash
     cd ./Lab05/03_java/1.1
     docker build -t java01 .
-    docker run -p 8080:8085 web01
+    docker run -p 8080:8080 java01
+
+    curl http://localhost:8080/customers
     ```
 
-* Java
+## Java02
     ```bash
-    docker build -t java01 .
-    docker run -p 8080:8085 web01
+    docker build -t java02 .
+    docker run -p 8080:8085 java02
     ```
 
     ```bash
