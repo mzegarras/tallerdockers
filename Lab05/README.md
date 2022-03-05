@@ -26,6 +26,11 @@
     ```bash
     docker build -t shell02 -f Dockerfile02 .
     docker run shell02
+    docker run -d shell02
+
+    docker exec -it <<pid>> sh
+    ps
+    kill -9 <<pid sh>>
     ```
 
 ## shell03
