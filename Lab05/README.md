@@ -181,7 +181,7 @@
     curl http://localhost:8080/WeatherForecast
     ```
 
-
+## Commands
 |Command    |Descripcion|Obligatorio|
 |-----------|-----------|-----------|
 |FROM       |Imagen base para construir la imagen|SI|
