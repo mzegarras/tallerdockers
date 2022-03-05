@@ -88,7 +88,17 @@
     ```bash
     docker build -t shell07 \
     --build-arg PATH_APPS=/opt \
-    --build-arg NAME_APP=APP01  \
+    --build-arg NAME_APP=APP02  \
+    -f Dockerfile07 .
+    docker run shell07
+    ```
+
+* /opt/MATRIZ
+
+    ```bash
+    docker build -t shell07 \
+    --build-arg PATH_APPS=/opt \
+    --build-arg NAME_APP=MATRIZ  \
     -f Dockerfile07 .
     docker run shell07
     ```
