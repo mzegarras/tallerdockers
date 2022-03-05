@@ -11,6 +11,8 @@ RUN mkdir ${FULL_APP}
 ADD demo03.sh ${FULL_APP}/app.sh
 RUN chmod +x ${FULL_APP}/app.sh
 
+RUN ls -lta /
+
 ENV NAME "Galaxy"
 ENV LAST_NAME "Training"
 
