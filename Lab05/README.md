@@ -126,10 +126,12 @@
     docker build -t web02 -f Dockerfile . --progress=plain --no-cache
     docker run -p 8080:8085 web02
     ```
-
-    1. Escuchar por el puerto 8085
-    1. Implementar un /health
-    1. Directorio /data/www
+## Java
+    ```bash
+    cd ./Lab05/03_java/1.1
+    docker build -t java01 .
+    docker run -p 8080:8085 web01
+    ```
 
 * Java
     ```bash
