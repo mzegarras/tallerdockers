@@ -5,4 +5,5 @@ RUN chmod +x ./app.sh
 
 ENV NAME "Galaxy"
 ENV LAST_NAME "Training"
+
 ENTRYPOINT ./app.sh
