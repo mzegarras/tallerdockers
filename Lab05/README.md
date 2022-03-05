@@ -149,7 +149,7 @@
     ```bash
     cd ./Lab05/03_java/1.2
     docker build -t java02 .
-    docker run -p 8080:8090 java02
+    docker run -d -p 8080:8090 java02
     ```
 
     ```bash
@@ -160,13 +160,13 @@
     ```bash
     cd ./Lab05/03_java/1.3
     docker build -t java11 .
-    docker run -p 8080:8085 java11
+    docker run -p 8080:8080 java11
     ```
 
     ```bash
     cd ./Lab05/03_java/1.4
     docker build -t java16 .
-    docker run -p 8081:8085 java16
+    docker run -p 8081:8080 java16
     ```
 
     ```bash
