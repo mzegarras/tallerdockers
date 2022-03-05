@@ -30,7 +30,7 @@
 
     docker push mzegarra/website:2.0.0
     docker push mzegarra/website:latest
-    
+
     ```
 
 * Docker hub login
@@ -41,14 +41,16 @@
 
 * Push Azure Registry
     ```bash
-    docker login galaxytraining01.azurecr.io -u galaxytraining01
+    docker login galaxytrainingdev.azurecr.io -u galaxytrainingdev
+    lN=1BLwPdZ69WdE0FgvpM3eL77ZG77fM
+    
     <<url repository>>/<<repository name>>:<<tag>>
 
-    docker tag website:latest galaxytraining01.azurecr.io/website:1.0.0
-    docker tag website:latest galaxytraining01.azurecr.io/website:2.0.0
+    docker tag website:latest galaxytrainingdev.azurecr.io/website_zegarra:1.0.0
+    docker tag website:latest galaxytrainingdev.azurecr.io/website_zegarra:1.0.0
 
     docker tag modventas:2.0.0 galaxytraining01.azurecr.io/modventas:mzegarra
-    docker push galaxytraining01.azurecr.io/modventas:mzegarra
+    docker push galaxytrainingdev.azurecr.io/website_zegarra:1.0.0
 
     ```
 
