@@ -1,19 +1,29 @@
 FROM alpine
 
-RUN apk update
-RUN apk add curl -y
-RUN mkdir /app
+# # Update imagen
+# RUN apk update
 
+# # Add dependency curl
+# RUN apk add curl
+
+# # Add dependency tzdata
+# RUN apk add tzdata
+# ENV TZ=America/Lima
+
+# # Create folder
+# RUN mkdir /app
+
+# # All commands
 # RUN apk update && \
 #     apk add curl  && \
 #     apk add git && \
+#     apk add tzdata && \
 #     mkdir /app
+
+# ENV TZ=America/Lima
 
 ADD demo05.sh ./app.sh
 RUN chmod +x ./app.sh
-
-
-
 
 ENTRYPOINT ./app.sh
 
