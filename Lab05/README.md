@@ -1,6 +1,6 @@
 # Lab05
 
-### Creando imagenes
+## Image
 
 * Limpiar (opcional)
     ```bash
@@ -13,7 +13,7 @@
     ```
 
 
-* Imagen shell01
+## shell01
     ```bash
     docker build -t shell01 .
     docker build -t shell01 . --progress=plain --no-cache
