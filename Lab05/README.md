@@ -37,6 +37,9 @@
     ```bash
     docker build -t shell03 -f Dockerfile03 .
     docker run shell03
+
+    docker build -t shell03 -f Dockerfile03 . --progress=plain --no-cache
+    docker run shell03
     ```
 
 ## shell04
