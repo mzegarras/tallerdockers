@@ -163,8 +163,23 @@
     curl http://localhost:8080/customers
     ```
 
+## NetCore01
+    ```bash
+    cd ./Lab05/04_netcore
+    docker build -t netcore01 .
+    docker run -p 8080:8080 netcore01
 
-* Node
+    curl http://localhost:8080/WeatherForecast
+    ```
+
+## Node01
+    ```bash
+    cd ./Lab05/05_node
+    docker build -t node01 .
+    docker run -p 3000:3000 node01
+
+    curl http://localhost:8080/WeatherForecast
+    ```
 
 
 |Command    |Descripcion|Obligatorio|
