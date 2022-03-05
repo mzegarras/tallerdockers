@@ -17,6 +17,8 @@
     docker tag website:latest website:1.0.0
     docker tag website:latest mzegarra/website:1.0.0
 
+    docker push mzegarra/website:1.0.0
+
     docker build -t website -f ./2.0/Dockerfile ./2.0/
     docker build -t modventas:2.0.0 .
     docker tag modventas:2.0.0 mzegarra/modventas:2.0.0
@@ -24,11 +26,16 @@
 
     docker tag website:latest website:2.0.0
     docker tag website:latest mzegarra/website:2.0.0
+    docker tag website:latest mzegarra/website:latest
+
+    docker push mzegarra/website:2.0.0
+    docker push mzegarra/website:latest
+    
     ```
 
 * Docker hub login
     ```bash
- docker login docker.io
+    docker login docker.io
     <<user>>/<<repository name>>:<<tag>>
     ```
 
