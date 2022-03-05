@@ -121,6 +121,12 @@
     ```
 
 ## web02
+    ```bash
+    cd ./Lab05/02_web/2.0
+    docker build -t web02 -f Dockerfile . --progress=plain --no-cache
+    docker run -p 8080:8085 web02
+    ```
+
     1. Escuchar por el puerto 8085
     1. Implementar un /health
     1. Directorio /data/www
