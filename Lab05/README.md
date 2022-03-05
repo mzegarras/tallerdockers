@@ -22,21 +22,19 @@
     * --progress=plain option as docker defaults to auto
     * --no-cache=it is necessary to rebuild the container
 
-* Imagen shell02
+## shell02
     ```bash
     docker build -t shell02 -f Dockerfile02 .
     docker run shell02
     ```
 
-* Imagen shell03
+## shell03
     ```bash
     docker build -t shell03 -f Dockerfile03 .
     docker run shell03
     ```
 
-* Imagen shell04
-
-
+## shell04
     ```bash
     RUN chmod +x ./app.sh
     ```
@@ -46,7 +44,7 @@
     docker run -e NAME="sss" shell04
     ```
 
-* Imagen shell05
+## shell05
 
     ```bash
     # Instalar prerequisitos
@@ -60,7 +58,7 @@
     ```
 
 
-* Imagen shell07
+## shell07
 
     ```bash
     docker build -t shell07 \
@@ -70,7 +68,7 @@
     docker run shell07
     ```
 
-* Imagen web 1.0
+## web01
 
     ```bash
      # Comprimir
@@ -83,7 +81,7 @@
     docker run -p 8080:8085 web01
     ```
 
-* Lab web 2.0
+## web02
     1. Escuchar por el puerto 8085
     1. Implementar un /health
     1. Directorio /data/www
