@@ -126,7 +126,7 @@
     docker build -t web02 -f Dockerfile . --progress=plain --no-cache
     docker run -p 8080:8085 web02
     ```
-## Java
+## Java01
     ```bash
     cd ./Lab05/03_java/1.1
     docker build -t java01 .
