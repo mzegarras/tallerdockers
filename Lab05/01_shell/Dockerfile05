@@ -1,10 +1,10 @@
 FROM alpine
 
 # # Update imagen
-# RUN apk update
+RUN apk update
 
 # # Add dependency curl
-# RUN apk add curl
+RUN apk add curl
 
 # # Add dependency tzdata
 # RUN apk add tzdata
