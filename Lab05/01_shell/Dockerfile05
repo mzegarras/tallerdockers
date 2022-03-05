@@ -16,7 +16,7 @@ FROM alpine
 # All commands
 RUN apk update && \
     apk add curl  && \
-    apk add git && \
+    apk add gito123 && \
     apk add tzdata && \
     mkdir /app
 
