@@ -2,9 +2,18 @@
 FROM nginx:1.19.2-perl
 
 ENV TZ=America/Lima
+
+# Folder
 #ADD ./dist /usr/share/nginx/html
 
+# Url
+#ADD http://myfile.com/dist.tgz /dist.tgz
+
+# Compress files
+#ADD /dist.tgz /dist.tgz
+
 ADD /dist.tgz /dist.tgz
+
 RUN ls -lt /dist.tgz/dist && \
     mv /dist.tgz/dist/* /usr/share/nginx/html && \
     ls -lt /usr/share/nginx/html

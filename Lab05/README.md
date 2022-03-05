@@ -96,12 +96,18 @@
 ## web01a
     ```bash
     cd ./Lab05/02_web/1.0
-
-    docker build -t web01 .
-    docker run -p 8080:80 web01
+    docker build -t web01a .
+    docker run -p 8080:80 web01a
     ```
 
-## web01
+## web01b
+    ```bash
+    cd ./Lab05/02_web/1.1
+    docker build -t web01b -f Dockerfile01 . --progress=plain --no-cache
+    docker run -p 8080:80 web01b
+    ```
+
+## web01c
 
     ```bash
      # Comprimir
@@ -110,8 +116,8 @@
     ```
 
     ```bash
-    docker build -t web01 .
-    docker run -p 8080:8085 web01
+    docker build -t web01c -f Dockerfile02 . --progress=plain --no-cache
+    docker run -p 8080:80 web01c
     ```
 
 ## web02
