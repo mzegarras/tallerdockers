@@ -149,7 +149,7 @@
     ```bash
     cd ./Lab05/03_java/1.2
     docker build -t java02 .
-    docker run -p 8080:8085 java02
+    docker run -p 8080:8090 java02
     ```
 
     ```bash
