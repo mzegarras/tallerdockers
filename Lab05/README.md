@@ -73,6 +73,7 @@
     ```
 
 ## shell07
+* /opt/APP01
 
     ```bash
     docker build -t shell07 \
@@ -81,6 +82,8 @@
     -f Dockerfile07 .
     docker run shell07
     ```
+
+* /opt/APP02
 
 ## web01
 
