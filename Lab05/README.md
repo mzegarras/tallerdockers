@@ -85,6 +85,14 @@
 
 * /opt/APP02
 
+    ```bash
+    docker build -t shell07 \
+    --build-arg PATH_APPS=/opt \
+    --build-arg NAME_APP=APP01  \
+    -f Dockerfile07 .
+    docker run shell07
+    ```
+    
 ## web01
 
     ```bash
