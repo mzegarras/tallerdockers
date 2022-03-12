@@ -222,7 +222,7 @@
     curl http://localhost:9083/api/productos    
     ```
 
-## Reto node
+## Microservice
 1. Generar la imagen del proyecto 03_node con el nombre apinode:1.0.0
 1. Ports: 3000:3000
 1. Environment
