@@ -78,15 +78,6 @@
         -e WORDPRESS_DB_PASSWORD=Password1234 \
         -e WORDPRESS_DB_NAME=wordpress -d \
         --net wp-net \
-        wordpress
-
-    
-    docker run --name wordpress01 \
-        -e WORDPRESS_DB_HOST=mysql01 \
-        -e WORDPRESS_DB_USER=root \
-        -e WORDPRESS_DB_PASSWORD=Password1234 \
-        -e WORDPRESS_DB_NAME=wordpress -d \
-        --net wp-net \
         -p 8080:80 \
         wordpress
 
