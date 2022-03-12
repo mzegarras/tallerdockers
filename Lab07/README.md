@@ -148,7 +148,7 @@
     docker run --name proxyserver01 \
         -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro \
         --net ms-net \
-        -p 8083:9060 -d nginx
+        -p 8083:9060 -d nginx:1.19.9
 
     curl http://localhost:8083/listar
     curl http://localhost:8083/api/productos
