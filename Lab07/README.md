@@ -24,12 +24,9 @@
     docker run --name wordpress01 --link mysql01 -p 8080:80 -e WORDPRESS_DB_HOST=mysql01:3306 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=Password1234 -e WORDPRESS_DB_NAME=wordpress -d wordpress
     ```
 
-1. Listar network
+## Bridge default
 
-* Bridge default
 
-    * Todos los containers se pueden ver
-    * La comunicación es por ip
 
     ```bash
     docker network ls
