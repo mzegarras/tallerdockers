@@ -101,6 +101,7 @@
     ```
 
 ## Lab Java 01
+
 1. cd 01_java
 
 1. Network
@@ -170,7 +171,7 @@
     docker run -d --network host nginx
     ```
 
-## Lab Java 02
+## Lab Proxy Reverse
 1. cd 02_java
 
 1. Network
