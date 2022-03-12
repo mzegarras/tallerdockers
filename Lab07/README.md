@@ -146,9 +146,14 @@
         -d reactivedemo:latest
     
     docker run --name proxyserver01 \
-        -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro \
+        -v $PWD/nginxv1.conf:/etc/nginx/nginx.conf:ro \
         --net ms-net \
         -p 8083:9060 -d nginx
+
+    docker run --name proxyserver02 \
+        -v $PWD/nginxlb.conf:/etc/nginx/nginx.conf:ro \
+        --net ms-net \
+        -p 8084:9060 -d nginx
 
     curl http://localhost:8083/listar
     curl http://localhost:8083/api/productos
