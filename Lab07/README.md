@@ -26,8 +26,6 @@
 
 ## Bridge default
 
-
-
     ```bash
     docker network ls
     docker run -d nginx
@@ -37,7 +35,7 @@
     docker inspect bridge
     ```
 
-* user-defined bridge network
+## user-defined bridge network
     ```bash
     docker network ls
     docker network create galaxy-net
