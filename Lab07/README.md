@@ -1,6 +1,6 @@
 # Network
 
-## Previre
+## Preview
 
 1. Pasos previos en local
     ```bash
@@ -16,7 +16,7 @@
     docker system prune
     ```
 
-1. <span style="color:red">*Link containers*</span>
+## Link
     ```bash
 
     docker run --name mysql01 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Password1234 -e WORDPRESS_DB_NAME=wordpress -d mysql:5.7.35
